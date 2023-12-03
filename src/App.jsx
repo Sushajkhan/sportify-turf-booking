@@ -13,15 +13,15 @@ import Newsletter from './components/Newsletter'
 import Home from './pages/Home'
 import TurfsHero from './components/TurfsHero'
 import TurfCard from './components/TurfCard'
+import Turfs from './pages/Turfs'
+import TurfBooking from './pages/TurfBooking'
 
 function App() {
  
 
   return (
     <>
-  <Navbar/>
-  <TurfsHero/>
-  <TurfCard/>
+ <TurfBooking/>
 
 
     </>
