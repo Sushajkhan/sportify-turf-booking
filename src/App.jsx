@@ -15,13 +15,26 @@ import TurfsHero from './components/TurfsHero'
 import TurfCard from './components/TurfCard'
 import Turfs from './pages/Turfs'
 import TurfBooking from './pages/TurfBooking'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
  
 
   return (
     <>
- <TurfBooking/>
+ <BrowserRouter>
+ <Routes>
+<Route path='/' element={<Home/>}/>
+<Route path='404' element={<NotFound/>}/>
+<Route path='/turfs' element={<Turfs/>}/>
+<Route path='/turfs/:id' element={<TurfBooking/>}/>
+
+
+
+
+ </Routes>
+ 
+ </BrowserRouter>
 
 
     </>
