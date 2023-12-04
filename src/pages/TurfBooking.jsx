@@ -8,6 +8,7 @@ import { MdOutlineCheckroom } from "react-icons/md";
 import { LuGlassWater } from "react-icons/lu";
 import Footer from '../components/Footer';
 import DatePick from '../components/DatePick';
+import Slots from '../components/Slots';
 
 
 
@@ -53,7 +54,10 @@ const TurfBooking = () => {
    
 </div>
 </div>
-<DatePick/>
+<div class="flex  items-center justify-evenly"><DatePick/>
+<Slots/></div>
+
+
 <Footer/>
 
 
