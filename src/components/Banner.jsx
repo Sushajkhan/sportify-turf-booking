@@ -8,7 +8,7 @@ const Banner = () => {
       <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
         <img
           alt="Party"
-          src="../../public/3895239.jpg"
+          src="/banner.jpg"
         />
       </div>
 
@@ -20,7 +20,7 @@ const Banner = () => {
         </p>
 
         <a
-          href="#"
+          href="/turfs"
           class="mt-8 inline-block rounded bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-blue-700 focus:outline-none "
         >
          Book A Turf

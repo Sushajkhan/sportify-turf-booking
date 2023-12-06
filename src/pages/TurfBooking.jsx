@@ -54,8 +54,38 @@ const TurfBooking = () => {
    
 </div>
 </div>
-<div class="flex  items-center justify-evenly"><DatePick/>
+<div class="mt-10 flex  justify-center gap-6"><DatePick/>
 <Slots/></div>
+
+
+
+<div class="flex justify-center items-center h-screen bg-blue-lightest">
+        <div id="app" class="bg-white w-128 h-60 rounded shadow-md flex card text-grey-darkest">
+            <img class="w-1/2 h-full rounded-l-sm" src="https://images.unsplash.com/photo-1566344412556-ff8fbf8aa7b2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Room Image"/>
+            <div class="w-full flex flex-col">
+                <div class="p-4 pb-0 flex-1">
+                    <h3 class="font-light mb-1 text-grey-darkest">Quilon Arena</h3>
+                    <div class="text-xs flex items-center mb-4">
+                        <i class="fas fa-map-marker-alt mr-1 text-grey-dark"></i>
+                        Kollam, Kerala
+                    </div>
+                    <span class="text-5xl text-grey-darkest">₹1200<span class="text-lg">/hr</span></span>
+                    <div class="flex items-center mt-4">
+                        <div class="pr-2 text-xs">
+                            <i class="fas fa-wifi text-green"></i> Dressing room
+                        </div>
+                        <div class="px-2 text-xs">
+                            <i class="text-grey-darker far fa-building"></i> Drinking water
+                        </div>
+                    </div>
+                </div>
+                <button class="px-6 place-self-end  py-2 w-[180px] font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none  ">
+    Book Now 
+</button>
+                
+            </div>
+        </div>
+    </div>
 
 
 <Footer/>

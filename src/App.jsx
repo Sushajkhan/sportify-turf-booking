@@ -28,7 +28,7 @@ function App() {
 <Route path='404' element={<NotFound/>}/>
 <Route path='/turfs' element={<Turfs/>}/>
 <Route path='/turfs/:id' element={<TurfBooking/>}/>
-
+<Route path='/login' element={<Login/>}/>
 
 
 
