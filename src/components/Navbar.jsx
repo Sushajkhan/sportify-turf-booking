@@ -1,4 +1,8 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+import Signup from '../pages/Signup';
+import Login from '../pages/Login';
+
 
 const Navbar = () => {
   return (
@@ -59,20 +63,17 @@ const Navbar = () => {
   
         <div class="flex items-center gap-4">
           <div class="sm:flex sm:gap-4">
-            <a
-              class="rounded-md bg-blue-600 px-5 py-2.5 text-sm font-medium text-white shadow"
-              href="/"
+            <NavLink to={"/login"}
+              
+              
             >
-              Login
-            </a>
+            <button class="rounded-md bg-blue-600 px-5 py-2.5 text-sm font-medium text-white shadow">Login</button>  
+            </NavLink>
   
             <div class="hidden sm:flex">
-              <a
-                class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-blue-600"
-                href="/"
-              >
-                Register
-              </a>
+              <NavLink to={"/signup"}>
+              <button  class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-blue-600"> Register</button> 
+              </NavLink>
             </div>
           </div>
   

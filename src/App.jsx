@@ -16,6 +16,7 @@ import TurfCard from './components/TurfCard'
 import Turfs from './pages/Turfs'
 import TurfBooking from './pages/TurfBooking'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Signup from './pages/Signup'
 
 function App() {
  
@@ -29,7 +30,7 @@ function App() {
 <Route path='/turfs' element={<Turfs/>}/>
 <Route path='/turfs/:id' element={<TurfBooking/>}/>
 <Route path='/login' element={<Login/>}/>
-
+<Route path='/signup' element={<Signup/>}/>
 
 
  </Routes>

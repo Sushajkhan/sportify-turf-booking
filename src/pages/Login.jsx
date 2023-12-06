@@ -1,73 +1,113 @@
 import React from 'react'
+import { Link, NavLink } from 'react-router-dom';
+import Signup from './Signup';
 
 const Login = () => {
   return (
-    <div class="flex flex-col ">
-    <div class="flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 lg:max-w-4xl ">
-    <div class="hidden bg-cover lg:block lg:w-1/2 bg-[url('https://images.unsplash.com/photo-1606660265514-358ebbadc80d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1575&q=80')]"></div>
 
-    <div class="w-full px-6 py-8 md:px-8 lg:w-1/2">
-        <div class="flex justify-center mx-auto">
-            <img class="w-auto h-7 sm:h-8" src="/logo.svg" alt=""/>
+
+
+<section class="relative flex flex-wrap lg:h-screen lg:items-center">
+  <div class="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24">
+    <div class="mx-auto max-w-lg text-center">
+      <h1 class="text-2xl font-bold sm:text-3xl">Get started today!</h1>
+
+      <p class="mt-4 text-gray-500">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et libero nulla eaque error neque
+        ipsa culpa autem, at itaque nostrum!
+      </p>
+    </div>
+
+    <form action="" class="mx-auto mb-0 mt-8 max-w-md space-y-4">
+      <div>
+        <label for="email" class="sr-only">Email</label>
+
+        <div class="relative">
+          <input
+            type="email"
+            class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+            placeholder="Enter email"
+          />
+
+          <span class="absolute inset-y-0 end-0 grid place-content-center px-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 text-gray-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
+              />
+            </svg>
+          </span>
         </div>
+      </div>
 
-        <p class="mt-3 text-xl text-center text-gray-600 dark:text-gray-200">
-            Welcome back!
+      <div>
+        <label for="password" class="sr-only">Password</label>
+
+        <div class="relative">
+          <input
+            type="password"
+            class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+            placeholder="Enter password"
+          />
+
+          <span class="absolute inset-y-0 end-0 grid place-content-center px-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 text-gray-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between">
+        <p class="text-sm text-gray-500">
+          No account?
+          <Link to={"/signup"}>Sign up</Link>
         </p>
 
-        <a href="#" class="flex items-center justify-center mt-4 text-gray-600 transition-colors duration-300 transform border rounded-lg dark:border-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
-            <div class="px-4 py-2">
-                <svg class="w-6 h-6" viewBox="0 0 40 40">
-                    <path d="M36.3425 16.7358H35V16.6667H20V23.3333H29.4192C28.045 27.2142 24.3525 30 20 30C14.4775 30 10 25.5225 10 20C10 14.4775 14.4775 9.99999 20 9.99999C22.5492 9.99999 24.8683 10.9617 26.6342 12.5325L31.3483 7.81833C28.3717 5.04416 24.39 3.33333 20 3.33333C10.7958 3.33333 3.33335 10.7958 3.33335 20C3.33335 29.2042 10.7958 36.6667 20 36.6667C29.2042 36.6667 36.6667 29.2042 36.6667 20C36.6667 18.8825 36.5517 17.7917 36.3425 16.7358Z" fill="#FFC107" />
-                    <path d="M5.25497 12.2425L10.7308 16.2583C12.2125 12.59 15.8008 9.99999 20 9.99999C22.5491 9.99999 24.8683 10.9617 26.6341 12.5325L31.3483 7.81833C28.3716 5.04416 24.39 3.33333 20 3.33333C13.5983 3.33333 8.04663 6.94749 5.25497 12.2425Z" fill="#FF3D00" />
-                    <path d="M20 36.6667C24.305 36.6667 28.2167 35.0192 31.1742 32.34L26.0159 27.975C24.3425 29.2425 22.2625 30 20 30C15.665 30 11.9842 27.2359 10.5975 23.3784L5.16254 27.5659C7.92087 32.9634 13.5225 36.6667 20 36.6667Z" fill="#4CAF50" />
-                    <path d="M36.3425 16.7358H35V16.6667H20V23.3333H29.4192C28.7592 25.1975 27.56 26.805 26.0133 27.9758C26.0142 27.975 26.015 27.975 26.0158 27.9742L31.1742 32.3392C30.8092 32.6708 36.6667 28.3333 36.6667 20C36.6667 18.8825 36.5517 17.7917 36.3425 16.7358Z" fill="#1976D2" />
-                </svg>
-            </div>
-
-            <span class="w-5/6 px-4 py-3 font-bold text-center">Sign in with Google</span>
-        </a>
-
-        <div class="flex items-center justify-between mt-4">
-            <span class="w-1/5 border-b dark:border-gray-600 lg:w-1/4"></span>
-
-            <a href="#" class="text-xs text-center text-gray-500 uppercase dark:text-gray-400 hover:underline">or login
-                with email</a>
-
-            <span class="w-1/5 border-b dark:border-gray-400 lg:w-1/4"></span>
-        </div>
-
-        <div class="mt-4">
-            <label class="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200" for="LoggingEmailAddress">Email Address</label>
-            <input id="LoggingEmailAddress" class="block w-full px-4 py-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-300" type="email" />
-        </div>
-
-        <div class="mt-4">
-            <div class="flex justify-between">
-                <label class="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200" for="loggingPassword">Password</label>
-                <a href="#" class="text-xs text-gray-500 dark:text-gray-300 hover:underline">Forget Password?</a>
-            </div>
-
-            <input id="loggingPassword" class="block w-full px-4 py-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-300" type="password" />
-        </div>
-
-        <div class="mt-6">
-            <button class="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50">
-                Sign In
-            </button>
-        </div>
-
-        <div class="flex items-center justify-between mt-4">
-            <span class="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span>
-
-            <a href="#" class="text-xs text-gray-500 uppercase dark:text-gray-400 hover:underline">or sign up</a>
-
-            <span class="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span>
-        </div>
-    </div>
-</div>
-<div class="self-center mt-16 text-gray-600">© Sushajkhan 2023</div>
+        <button
+          type="submit"
+          class="inline-block rounded-lg bg-blue-500 px-5 py-3 text-sm font-medium text-white"
+        >
+          Sign in
+        </button>
+      </div>
+    </form>
   </div>
+
+  <div class="relative h-64 w-full sm:h-70 lg:h-full lg:w-1/2">
+    <img class="h-screen w-screen object-cover"
+      alt="Welcome"
+      src="https://images.unsplash.com/photo-1671209151455-86980f5bf293?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    />
+  </div>
+</section>
+
+
   )
 }
 
