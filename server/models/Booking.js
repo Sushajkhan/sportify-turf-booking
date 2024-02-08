@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-export const bookingSchema = new Schema({
+const bookingSchema = new Schema({
   user: {
     type: mongoose.Schema.Types.String,
     ref: "User",

@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-const Schema = mongoose.Schema();
-const { bookingSchema } = require("./Booking");
+const Schema = mongoose.Schema;
+const { bookingSchema } = require("../models/Booking");
 
 const groundSchema = new Schema({
   ground_name: {
@@ -25,4 +25,6 @@ const groundSchema = new Schema({
   bookings: [bookingSchema],
 });
 
-export const Ground = mongoose.model("Ground", groundSchema);
+const Ground = mongoose.model("Ground", groundSchema);
+
+module.exports = Ground;
